@@ -1,0 +1,34 @@
+{
+    "name": "ignitionwolf/wolf-api-elastic",
+    "description": "Bridge between Elastic Cache Migrations and WolfAPI.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ignition Wolf",
+            "email": "hello@ignitionwolf.com",
+            "homepage": "https://ignitionwolf.com",
+            "role": "Developer"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "IgnitionWolf\\API\\Elastic\\": "src"
+        }
+    },
+    "require": {
+        "babenkoivan/elastic-migrations": "^1.2",
+        "babenkoivan/elastic-scout-driver": "^1.2",
+        "laravel/scout": "^8.3"
+    },
+    "require-dev": {
+        "nwidart/laravel-modules": "^7.2"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "IgnitionWolf\\API\\Elastic\\ServiceProvider"
+            ]
+        }
+    }
+}
